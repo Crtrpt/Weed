@@ -4,7 +4,10 @@
  * @param className
  * @returns
  */
-export function addCls(el: HTMLElement, className: string): HTMLElement {
+export function addCls(el: HTMLElement, className?: string) {
+  if(!className){
+    return 
+  }
   var cls:string[]=el.className.split(" ");
   if(cls.length==1 && cls[0]==""){
     cls=[className];
@@ -21,7 +24,7 @@ export function addCls(el: HTMLElement, className: string): HTMLElement {
  *
  * @param className 删除
  */
-export function removeCls(el: HTMLElement, className: string): HTMLElement {
+export function removeCls(el: HTMLElement, className: string) {
   var cls:string[]=el.className.split(" ");
   var idx=cls.indexOf(className);
   if(idx!=-1){
@@ -30,7 +33,7 @@ export function removeCls(el: HTMLElement, className: string): HTMLElement {
   return el;
 }
 
-export function toggleCls(el: HTMLElement, className: string): HTMLElement {
+export function toggleCls(el: HTMLElement, className: string) {
   var cls:string[]=el.className.split(" ");
   var idx=cls.indexOf(className);
   if(idx!=-1){
