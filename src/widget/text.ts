@@ -1,20 +1,18 @@
-import Widget from "../core/widget";
+import Widget from '../core/widget'
+import { createEl } from '../utils/el'
 
 export class Text implements Widget {
-  
-  el:HTMLElement=window.document.createElement("div");
-  
-  constructor(content:string=""){
-    this.el.className="text"
-    this.el.innerText=content
+  el: HTMLElement = createEl({ className: 'text' })
+
+  constructor(content: string = '') {
+    this.el.innerText = content
   }
 
   render(): any {
-    return this.el;
+    return this.el
   }
 }
 
-export function text(content:string="") {
-    return new Text(content);
+export function text(content: string = '') {
+  return new Text(content)
 }
-

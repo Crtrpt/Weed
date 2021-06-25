@@ -1,3 +1,3 @@
-export default interface Widget { 
+export default interface Widget {
   render(): any
 }

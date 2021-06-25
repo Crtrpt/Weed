@@ -1,15 +1,12 @@
-import Widget from "../core/widget";
+import Widget from '../core/widget'
+import { createEl } from '../utils/el'
 
-export default class Canvas implements Widget { 
-  
-  el:HTMLElement=window.document.createElement("canvas")
-  name="canvas"
+export default class Canvas implements Widget {
+  el: HTMLElement = createEl({ tag: 'canvas', className: 'canvas' })
 
-  constructor(){
-    this.el.className=this.name;
-  }
+  constructor() {}
 
   render(): any {
-    return this.el;
+    return this.el
   }
 }
