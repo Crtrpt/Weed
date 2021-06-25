@@ -13,7 +13,7 @@ export default {
       sourcemap: true,
       file: 'example/js/bundle.js',
       format: 'umd',
-      name:"trifoliate"
+      name:"weed"
     },
   plugins: [
     scss(

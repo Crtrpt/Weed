@@ -8,7 +8,7 @@ export default class Container implements Widget {
     this.children = children
   }
 
-  render(): any {
+  render(): HTMLElement {
     if (this.children.length > 0) {
       this.children.forEach((child) => {
         this.el.append(child.render())

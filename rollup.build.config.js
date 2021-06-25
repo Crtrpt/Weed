@@ -9,7 +9,7 @@ export default {
   output:{
       file: 'docs/js/bundle.js',
       format: 'umd',
-      name:"trifoliate"
+      name:"weed"
     },
   plugins: [
     scss() ,

@@ -2,7 +2,7 @@ import Widget from '../core/widget'
 import { createEl } from '../utils/el'
 
 export class Text implements Widget {
-  el: HTMLElement = createEl({ className: 'text' })
+  el: HTMLElement = createEl({ tag: 'p', className: 'text' })
 
   constructor(content: string = '') {
     this.el.innerText = content

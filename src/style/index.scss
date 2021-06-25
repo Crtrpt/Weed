@@ -1,7 +1,11 @@
+@import './var.scss';
+
 .weed {
   width: 100px;
   height: 200px;
+
   @import '../widget/text.scss';
   @import '../widget/button.scss';
   @import '../widget/container.scss';
+  @import '../widget/tab.scss';
 }
